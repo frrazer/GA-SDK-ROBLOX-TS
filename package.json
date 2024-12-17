@@ -1,13 +1,13 @@
 {
-  "name": "ga-sdk-roblox-ts",
+  "name": "@rbxts/gameanalytics-sdk",
   "version": "1.0.0",
   "description": "GA-SDK-ROBLOX\r =============",
-  "main": "index.js",
+  "main": "init.lua",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frrazer/GA-SDK-ROBLOX-TS.git"
   },
-  "author": "",
+  "author": "frrazers",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/frrazer/GA-SDK-ROBLOX-TS/issues"
@@ -25,7 +25,8 @@
 		"gameanalytics-sdk/GameAnalytics",
 		"gameanalytics-sdk/GameAnalyticsClient.lua",
 		"gameanalytics-sdk/init.lua",
-		"index.d.ts"
+		"index.d.ts",
+    "init.lua"
 	],
   "keywords": [
 		"roblox-ts",
