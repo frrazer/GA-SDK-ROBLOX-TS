@@ -1,0 +1,35 @@
+{
+  "name": "ga-sdk-roblox-ts",
+  "version": "1.0.0",
+  "description": "GA-SDK-ROBLOX\r =============",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frrazer/GA-SDK-ROBLOX-TS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frrazer/GA-SDK-ROBLOX-TS/issues"
+  },
+  "homepage": "https://docs.gameanalytics.com/integrations/sdk/roblox",
+  "devDependencies": {
+		"@rbxts/compiler-types": "^1.2.9-types.0",
+		"@rbxts/types": "^1.0.571"
+	},
+  "publishConfig": {
+		"access": "public"
+	},
+  "types": "index.d.ts",
+  "files": [
+		"gameanalytics-sdk/GameAnalytics",
+		"gameanalytics-sdk/GameAnalyticsClient.lua",
+		"gameanalytics-sdk/init.lua",
+		"index.d.ts"
+	],
+  "keywords": [
+		"roblox-ts",
+		"roblox",
+		"analytics"
+	]
+}
