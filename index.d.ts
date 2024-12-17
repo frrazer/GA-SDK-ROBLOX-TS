@@ -93,7 +93,7 @@ declare namespace GameAnalyticsLibrary {
      * The GameAnalytics SDK.
      * @server
      */
-    export const GameAnalytics: {
+    export const GameAnalyticsServer: {
         EGAResourceFlowType: EGAResourceFlowType;
         EGAProgressionStatus: EGAProgressionStatus;
         EGAErrorSeverity: EGAErrorSeverity;
@@ -127,13 +127,17 @@ declare namespace GameAnalyticsLibrary {
         isPlayerReady(playerId: number): boolean;
         initServer(gameKey: string, secretKey: string): void;
         initialize(options: GameAnalyticsOptions): void;
+        ProcessReceiptCallback(info: ProcessReceiptInfo): void;
+        GamepassPurchased(player: Player, id: number, customGamepassInfo?: ProductInfo): void;
     };
 
     /**
-	 * TS only function that sets up GameAnalytics on the client side. This should get run in a client-side context once the LocalPlayer finishes loading.
-	 * @client
-	 */
-    export const initializeClient: () => void;
+     * The GameAnalytics SDK.
+     * @client
+     */
+   export const GameAnalyticsClient: {
+        initClient(): void;
+   }
 }
 
 export = GameAnalyticsLibrary;
