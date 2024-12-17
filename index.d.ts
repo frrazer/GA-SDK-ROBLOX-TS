@@ -18,14 +18,14 @@ type EGAErrorSeverity = {
 }
 
 type EventOptions = {
-	customFields: { [key: string]: string } | undefined,
+	customFields?: { [key: string]: string },
 }
 
 type BusinessEventOptions = EventOptions & {
 	amount: number,
 	itemType: string,
 	itemId: string,
-	cartType: string | undefined,
+	cartType?: string,
 }
 
 type ResourceEventOptions = EventOptions & {
@@ -37,55 +37,55 @@ type ResourceEventOptions = EventOptions & {
 }
 
 type ProgressionEventOptions = EventOptions & {
-	progressionStatus: number,
-	progression01: string,
-	progression02: string | undefined,
-	progression03: string | undefined,
-	score: number | undefined,
+    progressionStatus: number,
+    progression01: string,
+    progression02?: string,
+    progression03?: string,
+    score?: number,
 }
 
 type DesignEventOptions = EventOptions & {
-	eventId: string,
-	value: number | undefined,
+    eventId: string,
+    value?: number,
 }
 
 type ErrorEventOptions = EventOptions & {
-	message: string,
-	severity: number,
+    message: string,
+    severity: number,
 }
 
 type CustomDimension = string
 
 type ProductInfo = {
-	Name: string,
-	PriceInRobux: number,
+    Name: string,
+    PriceInRobux: number,
 }
 
 type ProcessReceiptInfo = {
-	ProductId: number,
-	PlayerId: number,
-	CurrencySpent: number,
+    ProductId: number,
+    PlayerId: number,
+    CurrencySpent: number,
 }
 
 type TeleportData = { [key: string]: any }
 type RemoteConfigs = { [key: string]: any }
 
 type GameAnalyticsOptions = {
-	enableInfoLog: boolean | undefined,
-	enableVerboseLog: boolean | undefined,
-	availableCustomDimensions01: CustomDimension[] | undefined,
-	availableCustomDimensions02: CustomDimension[] | undefined,
-	availableCustomDimensions03: CustomDimension[] | undefined,
-	availableResourceCurrencies: string[] | undefined,
-	availableResourceItemTypes: string[] | undefined,
-	build: string | undefined,
-	availableGamepasses: string[] | undefined,
-	enableDebugLog: boolean | undefined,
-	automaticSendBusinessEvents: boolean | undefined,
-	reportErrors: boolean | undefined,
-	useCustomUserId: boolean | undefined,
-	gameKey: string | undefined,
-	secretKey: string | undefined,
+    enableInfoLog?: boolean,
+    enableVerboseLog?: boolean,
+    availableCustomDimensions01?: CustomDimension[],
+    availableCustomDimensions02?: CustomDimension[],
+    availableCustomDimensions03?: CustomDimension[],
+    availableResourceCurrencies?: string[],
+    availableResourceItemTypes?: string[],
+    build?: string,
+    availableGamepasses?: string[],
+    enableDebugLog?: boolean,
+    automaticSendBusinessEvents?: boolean,
+    reportErrors?: boolean,
+    useCustomUserId?: boolean,
+    gameKey?: string,
+    secretKey?: string,
 }
 
 declare namespace GameAnalyticsLibrary {

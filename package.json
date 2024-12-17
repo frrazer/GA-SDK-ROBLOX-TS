@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/gameanalytics-sdk",
-  "version": "1.0.0",
-  "description": "GA-SDK-ROBLOX\r =============",
+  "version": "1.0.1",
+  "description": "GameAnalytics SDK for Roblox-TS",
   "main": "init.lua",
   "repository": {
     "type": "git",
